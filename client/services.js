@@ -13,3 +13,11 @@ angular.module('myApp').factory('AuthService',
             register: register
         });
     }]);
+
+    function isLoggedIn(){
+        if(user){
+            return true;
+        } else {
+            return false;
+        }
+    }
